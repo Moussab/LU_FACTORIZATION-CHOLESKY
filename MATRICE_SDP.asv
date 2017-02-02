@@ -1,0 +1,9 @@
+function A = MATRICE_SDP(N)
+ bool = 0;
+while( bool == 0)
+    A = rand(N,N); % éléments extra diago
+    A= (A + A')/2; % symétrisation
+    A = 10*(A*A');
+    A = floor(A);
+    if(min(eig_A) > 0)
+end
